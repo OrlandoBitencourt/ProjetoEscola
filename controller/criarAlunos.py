@@ -20,5 +20,5 @@ class CriarAluno(Resource):
     def get(self):
        # for i in listaAlunos:
           #  print(i))
-       return 'Lista de Alunos'
+       return print(listaAlunos)
 
