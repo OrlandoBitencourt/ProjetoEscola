@@ -1,0 +1,71 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ProjetoEscola",
+		"_postman_id": "50eda6bf-9182-7012-881c-eaa561bea2f9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/respostas",
+			"request": {
+				"url": "http://127.0.0.1:8000/respostas",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"resposta\":\n        {\n            \"idProva\": 0,\n            \"idAluno\": 0,\n            \"q1\": \"19\",\n            \"q2\": \"1?\",\n            \"q3\": \"2\",\n            \"q4\": \"5\",\n            \"q5\": \"2\",\n            \"q6\": \"6\",\n            \"q7\": \"7\",\n            \"q8\": \"10\",\n            \"q9\": \"9\",\n            \"q10\": \"10\"\n        }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/gabaritos",
+			"request": {
+				"url": "http://127.0.0.1:8000/gabaritos",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"prova\":\n        {\n            \"id\": 0,\n            \"q1\": \"1: Quanto é 2-2?\",\n            \"r1\": \"0\",\n            \"q2\": \"2: Quanto é 2-1?\",\n            \"r2\": \"1\",\n            \"q3\": \"3: Quanto é 4-1?\",\n            \"r3\": \"3\",\n            \"q4\": \"4: Quanto é 7-3?\",\n            \"r4\": \"5\",\n            \"q5\": \"5: Quanto é 11-5?\",\n            \"r5\": \"6\",\n            \"q6\": \"6: Quanto é 12-4?\",\n            \"r6\": \"8\",\n            \"q7\": \"7: Quanto é 10-10?\",\n            \"r7\": \"0\",\n            \"q8\": \"8: Quanto é 15-4?\",\n            \"r8\": \"11\",\n            \"q9\": \"9: Quanto é 2+4?\",\n            \"r9\": \"6\",\n            \"q10\": \"10: Quanto é 25-4?\",\n            \"r10\": \"21\"\n        }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/aluno",
+			"request": {
+				"url": "http://127.0.0.1:8000/aluno",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"aluno\":\n        {\n            \"id\": 0,\n            \"nome\": \"Jose\",\n            \"cpf\": \"168.098.128.00\"\n        }\n}\n\n\n\n{\n    \"aluno\":\n        {\n            \"id\": 1,\n            \"nome\": \"Orlando\",\n            \"cpf\": \"094.237.849.09\"\n        }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
