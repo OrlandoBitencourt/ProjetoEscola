@@ -18,7 +18,7 @@ class CriarAluno(Resource):
             return "Numero maximo de alunos cadastrados"
 
     def get(self):
-       # for i in listaAlunos:
-          #  print(i))
-       return print(listaAlunos)
+        for i in listaAlunos:
+            print(i.id," - ",i.nome," - ",i.cpf)
+        return 'lista de alunos'
 
