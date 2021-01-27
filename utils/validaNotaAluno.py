@@ -10,6 +10,6 @@ def validaNotaAluno (cpf, prova, idProva):
             break;
 
 
-    verificaGabarito(prova,idProva)
+    verificaGabarito(prova,idProva,aluno)
     print(aluno)
 
