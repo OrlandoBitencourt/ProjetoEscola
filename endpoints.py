@@ -5,6 +5,7 @@ from controller.cadastrarProvas import CadastrarProvas
 from controller.prova import Prova
 from controller.aprovados import Aprovado
 
+
 def init_api(app):
     api = Api()
 

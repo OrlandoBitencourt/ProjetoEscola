@@ -5,6 +5,7 @@ from controller.criarAlunos import listaAlunos
 
 listaAprovados = []
 
+#Lista e valida os alunos (apenas traz os aprovados)
 class Aprovado(Resource):
     def get(self):
         result = {}
