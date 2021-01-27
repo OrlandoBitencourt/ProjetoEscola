@@ -12,7 +12,7 @@ class Aprovado(Resource):
         for aluno in listaAlunos:
             if aluno.aprovado == True:
                 print(aluno.nome)
-                listaAprovados.append(aluno)
+                listaAprovados.append([aluno.id,aluno.nome, aluno.cpf, aluno.media, aluno.aprovado])
         result = {
             "Aprovados": listaAprovados
         }

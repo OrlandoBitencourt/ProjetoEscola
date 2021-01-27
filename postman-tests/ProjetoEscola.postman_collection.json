@@ -8,26 +8,6 @@
 	},
 	"item": [
 		{
-			"name": "http://127.0.0.1:8000/respostas",
-			"request": {
-				"url": "http://127.0.0.1:8000/respostas",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "\n{\n    \"resposta\":\n        {\n            \"idProva\": 0,\n            \"idAluno\": 0,\n            \"q1\": \"19\",\n            \"q2\": \"1?\",\n            \"q3\": \"2\",\n            \"q4\": \"5\",\n            \"q5\": \"2\",\n            \"q6\": \"6\",\n            \"q7\": \"7\",\n            \"q8\": \"10\",\n            \"q9\": \"9\",\n            \"q10\": \"10\"\n        }\n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
 			"name": "http://127.0.0.1:8000/gabaritos",
 			"request": {
 				"url": "http://127.0.0.1:8000/gabaritos",
@@ -62,6 +42,46 @@
 				"body": {
 					"mode": "raw",
 					"raw": "\n{\n    \"aluno\":\n        {\n            \"id\": 0,\n            \"nome\": \"Jose\",\n            \"cpf\": \"168.098.128.00\"\n        }\n}\n\n\n\n{\n    \"aluno\":\n        {\n            \"id\": 1,\n            \"nome\": \"Orlando\",\n            \"cpf\": \"094.237.849.09\"\n        }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/provas/094.237.849.09/0",
+			"request": {
+				"url": "http://127.0.0.1:8000/provas/094.237.849.09/0",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"prova\":\n        {\n            \"q1\": \"0\",\n            \"q2\": \"1\",\n            \"q3\": \"3\",\n            \"q4\": \"4\",\n            \"q5\": \"5\",\n            \"q6\": \"6\",\n            \"q7\": \"7\",\n            \"q8\": \"8\",\n            \"q9\": \"9\",\n            \"q10\": \"10\"\n        }\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/provas/168.098.128.00/0",
+			"request": {
+				"url": "http://127.0.0.1:8000/provas/168.098.128.00/0",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"prova\":\n        {\n            \"q1\": \"0\",\n            \"q2\": \"1\",\n            \"q3\": \"3\",\n            \"q4\": \"4\",\n            \"q5\": \"5\",\n            \"q6\": \"6\",\n            \"q7\": \"7\",\n            \"q8\": \"8\",\n            \"q9\": \"9\",\n            \"q10\": \"10\"\n        }\n}\n"
 				},
 				"description": ""
 			},
