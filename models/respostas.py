@@ -3,7 +3,7 @@
 #Q = Respostas das perguntas Ex. q1 (resposta da questão 1)
 
 class Resposta():
-    def __init__(self, idProva, idAluno, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, nota=0):
+    def __init__(self, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, nota=0, idProva=0, idAluno=0):
         self.idProva = idProva
         self.idAluno = idAluno
         self.q1 = q1

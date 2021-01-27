@@ -1,11 +1,10 @@
 from controller.cadastrarProvas import listaGabaritos
-
-
+from models.alunosNotas import Notas
 
 def verificaGabarito (prova, idProva, aluno):
     nota = 0
     idProva = int(idProva)
-    idAluno = int(idAluno)
+    idAluno = int(aluno)
     prova.idProva = idProva
     prova.idAluno = idAluno
 
@@ -35,6 +34,7 @@ def verificaGabarito (prova, idProva, aluno):
     elif nota > 10:
         nota = 10
     prova.nota = nota
-    print(prova)
+    #print(prova)
     print(f'Nota: {nota}')
+
 

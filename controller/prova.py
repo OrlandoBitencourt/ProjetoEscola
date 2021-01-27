@@ -10,7 +10,8 @@ class Prova(Resource):
     @staticmethod
     def post(cpf, idProva):
         prova = request.json['prova']
-        respostas = json.loads(prova, object_hook=lambda d: Resposta(**d))
+        pr = json.dumps(prova)
+        respostas = json.loads(pr, object_hook=lambda d: Resposta(**d))
         validaNotaAluno(cpf, respostas, idProva)
         return 'Respostas Salvas Com Sucesso'
 
