@@ -34,7 +34,7 @@ No arquivo `endpoints.py` estão todas as rotas:
 - Cadastra todas as questões das provas e as respostas através do metodo POST.
 - O sistema permite cadastrar 10 questões para cada prova e 10 respostas. 
 
-### Rota: `"/provas/<'cpf'>/<idProva>"`:
+### Rota: `"/provas/<cpf>/<idProva>"`:
 - Rota resposavel por cadastrar as respostas do aluno para a prova com metodo POST.
 - O calculo da nota acontece após as respostas serem salvas. 
 - A media geral do aluno também é calculada cada vez que ele responde uma questão (a nota final é a média aritmética das notas de todas as provas).
