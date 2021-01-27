@@ -42,3 +42,26 @@ No arquivo `endpoints.py` estão todas as rotas:
 ### Rota: `"/aprovados"`:
 - Responsavel por retornar lista de alunos aprovados em formato json com o metodo GET (Para um aluno ser aprovado sua media precisa ser acima de 7).
 
+## **Utilização:**
+
+Após executar o arquivo `main.py`, devem ser inseridos gabaritos e alunos, no diretorio `postman-tests` existem alguns exemplos que foram utilizados durante a produção da aplicação. 
+
+Através do metodo POST podem ser inseridos alunos e gabaritos.
+
+Cadastrar aluno alunos:
+
+![cadastroAluno](https://user-images.githubusercontent.com/11688998/106030489-fff7bf80-60ac-11eb-8f2d-673576551581.png)
+
+Cadastrar gabaritos: 
+
+![cadastroGabarito](https://user-images.githubusercontent.com/11688998/106031067-8f9d6e00-60ad-11eb-8caf-0233dab16c88.png)
+
+A resposta de provas também é feita pelo Metodo POST, da seguinte forma:
+
+Resposta de provas (CPF e ID da prova são enviados junto no cabeçalho):
+
+![cadastroRespostas](https://user-images.githubusercontent.com/11688998/106031425-06d30200-60ae-11eb-9cae-31a0123e6a0c.png)
+
+A lista de alunos aprovados é retornada em modo json com metodo GET na rota /aprovados:
+![listaAprovados](https://user-images.githubusercontent.com/11688998/106031737-5ca7aa00-60ae-11eb-86ad-6a6059d1a0da.png)
+
