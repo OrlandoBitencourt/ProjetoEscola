@@ -7,13 +7,13 @@
 - Frameworks usados: Flask e Flask_restfull.
 - Todos os modulos do python estão no arquivo `Requirements.txt` (estão instalados na virtualenv na pasta nomeada `venv`).
 
-Para executar o projeto basta executar o arquivo `main.py`.
-
-Para validar os metodos POST utilizei o app Postman, dentro da pasta `postman-tests`.
-
 ## **Documentação:**
 
 Toda entrada e saída de dados é em no formato `JSON`.
+
+Para validar os metodos POST utilizei o app Postman, dentro da pasta `postman-tests`.
+
+Para executar o projeto basta executar o arquivo `main.py`.
 
 No arquivo `endpoints.py` estão todas as rotas:
 - `"/health-check"`
@@ -41,3 +41,4 @@ No arquivo `endpoints.py` estão todas as rotas:
 
 ### Rota: `"/aprovados"`:
 - Responsavel por retornar lista de alunos aprovados em formato json com o metodo GET (Para um aluno ser aprovado sua media precisa ser acima de 7).
+
